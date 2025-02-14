@@ -28,6 +28,17 @@ $(document).ready(function() {
     }
   });
 
+  // Add event listeners for arrow keys
+  $(document).keydown(function(e) {
+    if (e.key === "ArrowRight" && currentIndex < totalTestimonials - 1) {
+      currentIndex++;
+      showTestimonial(currentIndex);
+    } else if (e.key === "ArrowLeft" && currentIndex > 0) {
+      currentIndex--;
+      showTestimonial(currentIndex);
+    }
+  });
+
   // Initialize the first testimonial
   showTestimonial(currentIndex);
 });
