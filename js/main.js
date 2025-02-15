@@ -9,20 +9,12 @@ $(document).ready(function() {
   }
 
   function nextTestimonial() {
-    if (currentIndex < totalTestimonials - 1) {
-      currentIndex++;
-    } else {
-      currentIndex = 0;
-    }
+    currentIndex = (currentIndex + 1) % totalTestimonials;
     showTestimonial(currentIndex);
   }
 
   function prevTestimonial() {
-    if (currentIndex > 0) {
-      currentIndex--;
-    } else {
-      currentIndex = totalTestimonials - 1;
-    }
+    currentIndex = (currentIndex - 1 + totalTestimonials) % totalTestimonials;
     showTestimonial(currentIndex);
   }
 
