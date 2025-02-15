@@ -6,36 +6,35 @@ $(document).ready(function() {
   function showTestimonial(index) {
     testimonials.removeClass("active");
     testimonials.eq(index).addClass("active");
-    updateArrowsVisibility(index);
   }
 
-  function updateArrowsVisibility(index) {
-    $(".prev-arrow").toggle(index > 0);
-    $(".next-arrow").toggle(index < totalTestimonials - 1);
-  }
-
-  $(".next-arrow").click(function() {
+  function nextTestimonial() {
     if (currentIndex < totalTestimonials - 1) {
       currentIndex++;
-      showTestimonial(currentIndex);
+    } else {
+      currentIndex = 0;
     }
-  });
+    showTestimonial(currentIndex);
+  }
 
-  $(".prev-arrow").click(function() {
+  function prevTestimonial() {
     if (currentIndex > 0) {
       currentIndex--;
-      showTestimonial(currentIndex);
+    } else {
+      currentIndex = totalTestimonials - 1;
     }
-  });
+    showTestimonial(currentIndex);
+  }
+
+  $(".next-arrow").click(nextTestimonial);
+  $(".prev-arrow").click(prevTestimonial);
 
   // Add event listeners for arrow keys
   $(document).keydown(function(e) {
-    if (e.key === "ArrowRight" && currentIndex < totalTestimonials - 1) {
-      currentIndex++;
-      showTestimonial(currentIndex);
-    } else if (e.key === "ArrowLeft" && currentIndex > 0) {
-      currentIndex--;
-      showTestimonial(currentIndex);
+    if (e.key === "ArrowRight") {
+      nextTestimonial();
+    } else if (e.key === "ArrowLeft") {
+      prevTestimonial();
     }
   });
 
