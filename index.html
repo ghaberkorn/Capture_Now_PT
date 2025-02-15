@@ -207,27 +207,61 @@ document.addEventListener("DOMContentLoaded", function () {
     const testimonials = document.querySelectorAll(".testimonial-box");
     const prevArrow = document.querySelector(".prev-arrow");
     const nextArrow = document.querySelector(".next-arrow");
+    const dotsContainer = document.createElement("div");
     let currentIndex = 0;
+    let interval;
+
+    dotsContainer.classList.add("testimonial-dots");
+    document.querySelector(".testimonial-row").after(dotsContainer);
+
+    testimonials.forEach((_, index) => {
+        const dot = document.createElement("span");
+        dot.classList.add("dot");
+        dot.addEventListener("click", function () {
+            currentIndex = index;
+            updateTestimonials();
+            resetInterval();
+        });
+        dotsContainer.appendChild(dot);
+    });
 
     function updateTestimonials() {
         testimonials.forEach((testimonial, index) => {
             testimonial.classList.remove("active");
+            dotsContainer.children[index].classList.remove("active");
         });
 
         testimonials[currentIndex].classList.add("active");
+        dotsContainer.children[currentIndex].classList.add("active");
+    }
+
+    function nextTestimonial() {
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        updateTestimonials();
+    }
+
+    function prevTestimonial() {
+        currentIndex = (currentIndex === 0) ? testimonials.length - 1 : currentIndex - 1;
+        updateTestimonials();
+    }
+
+    function resetInterval() {
+        clearInterval(interval);
+        interval = setInterval(nextTestimonial, 5000);
     }
 
     prevArrow.addEventListener("click", function () {
-        currentIndex = (currentIndex === 0) ? testimonials.length - 1 : currentIndex - 1;
-        updateTestimonials();
+        prevTestimonial();
+        resetInterval();
     });
 
     nextArrow.addEventListener("click", function () {
-        currentIndex = (currentIndex === testimonials.length - 1) ? 0 : currentIndex + 1;
-        updateTestimonials();
+        nextTestimonial();
+        resetInterval();
     });
 
     updateTestimonials();
+    resetInterval();
 });
 
 </script>
