@@ -2,30 +2,6 @@
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-.testimonial-row {
-    position: relative;
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
-    height: 300px; /* Set a fixed height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.testimonial-box {
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    width: 100%;
-    text-align: center;
-}
-
-.testimonial-box.active {
-    opacity: 1;
-    position: relative;
-}
-
 .arrow {
     cursor: pointer;
     font-size: 24px;
