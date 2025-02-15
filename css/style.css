@@ -1134,5 +1134,12 @@ flex: 0 0 100%;
       font-size: 30px;
   }
 }
+.testimonial-box {
+  display: none;
+}
+
+.testimonial-box.active {
+  display: block;
+}
 
 
