@@ -4,8 +4,8 @@ $(document).ready(function() {
   const totalTestimonials = testimonials.length;
 
   function showTestimonial(index) {
-    testimonials.removeClass("active");
-    testimonials.eq(index).addClass("active");
+    testimonials.removeClass("active").hide(); // Hide all testimonials
+    testimonials.eq(index).addClass("active").fadeIn(); // Show only the active one
   }
 
   function nextTestimonial() {
@@ -21,7 +21,6 @@ $(document).ready(function() {
   $(".next-arrow").click(nextTestimonial);
   $(".prev-arrow").click(prevTestimonial);
 
-  // Add event listeners for arrow keys
   $(document).keydown(function(e) {
     if (e.key === "ArrowRight") {
       nextTestimonial();
@@ -30,6 +29,6 @@ $(document).ready(function() {
     }
   });
 
-  // Initialize the first testimonial
-  showTestimonial(currentIndex);
+  // Initialize first testimonial visibility
+  testimonials.hide().eq(currentIndex).show();
 });
