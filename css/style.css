@@ -46,7 +46,7 @@
 }
 
 /* Navigation Dots */
-.testimonial-dots {
+-dots {
     text-align: center;
     margin-top: 10px;
 }
@@ -1047,8 +1047,11 @@ header .btn.start-now:hover {
 
 /* Testimonial Section */
 .testimonial {
-  padding: 80px 0px;
-  background-color: #f9f9f9;
+  padding-top: 100px;
+  margin-top: 50px
+	background-color: #f9f9f9;
+    margin-top: 50px; 
+    position: relative;
 }
 
 .testimonial .content {
