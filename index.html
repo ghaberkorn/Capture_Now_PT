@@ -9,94 +9,18 @@
   <link rel="icon" href="images/logo.jpg" type="image/jpeg">
 </head>
 <body>
-  <!-- Start Header -->
-  <header class="fixed-top bg-dark py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-      <div class="logo">
-        <a href="#"><img src="images/logo.jpg" alt="Capture Now PT Logo" style="height: 80px;" /></a>
-      </div>
-      <a href="#contact" class="btn btn-primary">Start Now</a>
-    </div>
-  </header>
-  <!-- End Header -->
-
-  <!-- Start Home -->
-  <section class="home d-flex align-items-center justify-content-center text-center text-white" style="background-image: url('../images/home.jpg'); background-size: cover; height: 100vh;">
-    <div class="container">
-      <h1 class="display-4 mb-3">Live for today</h1>
-      <h1 class="display-4 mb-3">Train for Tomorrow</h1>
-      <a href="#about" class="go-down btn btn-light mt-3">
-        <i class="fa fa-angle-down"></i>
-      </a>
-    </div>
-  </section>
-  <!-- End Home -->
-
-  <!-- Start Service -->
-  <section class="service py-5 bg-info" id="service">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="box text-center">
-            <h2>Services</h2>
-            <p>We offer a variety of training services to meet your fitness needs. Whether you prefer the convenience of online training or the personalized touch of in-person sessions, we have you covered.</p>
-            <a href="#" class="btn btn-dark">Start Now</a>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Online Training
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Our online training programs are designed to provide you with the flexibility to work out from anywhere. You'll receive personalized workout plans, video demonstrations, and ongoing support from our trainers.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  In-Person Training
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Experience the benefits of one-on-one training with our in-person sessions. Our trainers will work with you to create a customized fitness plan, provide hands-on guidance, and help you achieve your goals.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="box text-center">
-            <h2>Start Your Training Today</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <a href="#" class="btn btn-dark">Start Now</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Service -->
-
   <!-- Start Portfolio -->
   <section class="portfolio py-5" id="portfolio">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 col-lg-4 mb-4">
           <div class="box">
             <h2>My Portfolio</h2>
-            <div class="portfolio-content">
-              <div class="portfolio-left">
+            <div class="portfolio-content d-flex flex-column flex-md-row">
+              <div class="portfolio-left mb-3 mb-md-0">
                 <img src="images/personaltrainerphoto.png" alt="Jeff's Portfolio Photo" class="img-fluid rounded">
               </div>
-              <div class="portfolio-right">
+              <div class="portfolio-right ms-md-4">
                 <ul>
                   <li>Certified Online Personal Trainer</li>
                   <li>NASM certified personal trainer</li>
@@ -113,24 +37,20 @@
   </section>
   <!-- End Portfolio -->
 
-  <!-- Start Contact -->
-  <section class="contact py-5 bg-dark text-white" id="contact">
+  <!-- Start Testimonials -->
+  <section class="testimonials py-5 bg-light" id="testimonials">
     <div class="container">
+      <h2 class="text-center mb-5">What Our Clients Are Saying</h2>
       <div class="row">
-        <div class="col-md-6">
-          <h2>Start your Physical Training journey today!</h2>
-          <p>Get connected with our top-of-the-line physical trainer and start your fitness journey.</p>
+        <div class="col-md-4 col-sm-12 mb-4">
+          <div class="card">
+            <img src="images/testimonial1.jpg" class="card-img-top" alt="Testimonial 1">
+            <div class="card-body">
+              <h5 class="card-title">Client 1</h5>
+              <p class="card-text">"Jeff helped me lose 30 lbs in just 3 months! The online program is so easy to follow, and I’ve never felt better."</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScsdo13eQ4X4k_J9_nRRXX8pltipnkTch0UmqYX2O0lsNTb4w/viewform?embedded=true" width="100%" height="721" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Contact -->
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-</body>
-</html>
+        <div class="col-md-4 col-sm-12 mb-4">
+          <di
