@@ -29,7 +29,6 @@ header{
 }
 
 header .container{
-	-webkit-display: flex;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -72,7 +71,6 @@ header .btn.start-now:hover {
 	background-image: url('../images/home.jpg');
 	background-size: cover;
 	padding:15px;
-	-webkit-display: flex;
 	display: flex;
 	position: relative;
 }
@@ -92,7 +90,6 @@ header .btn.start-now:hover {
 	color:#ffffff;
 }
 .home .container{
-  -webkit-display: flex;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -119,7 +116,6 @@ header .btn.start-now:hover {
 }
 
 .about .content{ 
- -webkit-display: flex;
  display: flex;
 }
 .about .content .box{
@@ -166,7 +162,6 @@ header .btn.start-now:hover {
 }
 
 .service .content{
-	-webkit-display:flex;
 	display:flex;
 }
 
@@ -267,7 +262,6 @@ header .btn.start-now:hover {
 }
 
 .classes .content{
-	-webkit-display: flex;
 	display: flex;
 }
 
@@ -279,7 +273,6 @@ header .btn.start-now:hover {
 
 .classes .content .img img{
 	width: 100%;
-	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 }
 
@@ -385,7 +378,6 @@ header .btn.start-now:hover {
 }
 
 .start-today .content{
-	-webkit-display: flex;
 	display: flex;
 	align-items: center;
 }
@@ -442,7 +434,6 @@ header .btn.start-now:hover {
 }
 
 .schedule .content{
-	-webkit-display: flex;
 	display: flex;
 }
 
@@ -503,7 +494,6 @@ header .btn.start-now:hover {
 /*Gallery Section*/
 
 .gallery .content{
-	-webkit-display: flex;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -515,13 +505,10 @@ header .btn.start-now:hover {
 .gallery .content .box img{
 	display: block;
 	width: 100%;
-	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
-	-webkit-transition: all .5s ease;
 	transition: all .5s ease;
 }
 .gallery .content .box img:hover{
-	-webkit-filter: grayscale(0%);
 	filter: grayscale(0%);
 }
 
@@ -559,7 +546,6 @@ header .btn.start-now:hover {
 }
 
 .price-package .content{
-	-webkit-display: flex;
 	display: flex;
 }
 .price-package .content .box{
@@ -606,7 +592,6 @@ header .btn.start-now:hover {
     display: inline-block;
     border: 1px solid transparent;
     cursor: pointer;
-    -webkit-transition: all .5s ease;
     transition: all .5s ease;
     margin-top: 10px;
 }
@@ -629,7 +614,6 @@ header .btn.start-now:hover {
 }
 
 .contact .content{
-	-webkit-display: flex;
 	display: flex;
 }
 
