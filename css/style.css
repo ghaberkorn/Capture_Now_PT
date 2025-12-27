@@ -768,6 +768,27 @@ header .btn.start-now:hover {
     color: #00ccff;
     padding: 0px 0px 20px;
 }
+
+.contact .content .text h3{
+	font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 0px 0px 20px;
+}
+
+.contact .content .text h4{
+	font-size: 50px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 0px 0px 20px;
+}
+
+.contact .content .text h1{
+	font-size: 40px;
+    font-weight: 700;
+    color: #00ccff;
+    padding: 0px 0px 20px;
+}
 .contact .content .text p{
     font-size: 15px;
     line-height: 20px;
