@@ -777,7 +777,7 @@ header .btn.start-now:hover {
 }
 
 .contact .content .text h4{
-	font-size: 50px;
+	font-size: 20px;
     font-weight: 500;
     color: #ffffff;
     padding: 0px 0px 20px;
@@ -1244,4 +1244,5 @@ flex: 0 0 100%;
 .testimonial-box.active {
   display: block;
 }
+
 
